@@ -1,0 +1,116 @@
+//db creation
+Create database multiple_mail_send;
+
+//Table creation
+create table emailqueue
+(
+ id int NOT NULL AUTO_INCREMENT,
+ from_email_address varchar(100),
+ to_email_address varchar(100),
+ subject varchar(200),
+ body varchar(300),
+ data_email varchar(700),
+ primary key(id)
+)
+
+//Insert commands
+Insert into emailqueue values (1,'1@iiitdmj.ac.in','r2421177@gmail.com','hello this is mail no. 1','Hi i am employee no. 1','1|1@iiitdmj.ac.in|r2421177@gmail.com|hello this is mail no. 1|Hi i am employee no. 1');
+Insert into emailqueue values (2,'2@iiitdmj.ac.in','r2421177@gmail.com','hello this is mail no. 2','Hi i am employee no. 2','2|2@iiitdmj.ac.in|r2421177@gmail.com|hello this is mail no. 2|Hi i am employee no. 2');
+Insert into emailqueue values (3,'3@iiitdmj.ac.in','r2421177@gmail.com','hello this is mail no. 3','Hi i am employee no. 3','3|3@iiitdmj.ac.in|r2421177@gmail.com|hello this is mail no. 3|Hi i am employee no. 3');
+Insert into emailqueue values (4,'4@iiitdmj.ac.in','r2421177@gmail.com','hello this is mail no. 4','Hi i am employee no. 4','4|4@iiitdmj.ac.in|r2421177@gmail.com|hello this is mail no. 4|Hi i am employee no. 4');
+Insert into emailqueue values (5,'5@iiitdmj.ac.in','r2421177@gmail.com','hello this is mail no. 5','Hi i am employee no. 5','5|5@iiitdmj.ac.in|r2421177@gmail.com|hello this is mail no. 5|Hi i am employee no. 5');
+Insert into emailqueue values (6,'6@iiitdmj.ac.in','r2421177@gmail.com','hello this is mail no. 6','Hi i am employee no. 6','6|6@iiitdmj.ac.in|r2421177@gmail.com|hello this is mail no. 6|Hi i am employee no. 6');
+Insert into emailqueue values (7,'7@iiitdmj.ac.in','r2421177@gmail.com','hello this is mail no. 7','Hi i am employee no. 7','7|7@iiitdmj.ac.in|r2421177@gmail.com|hello this is mail no. 7|Hi i am employee no. 7');
+Insert into emailqueue values (8,'8@iiitdmj.ac.in','r2421177@gmail.com','hello this is mail no. 8','Hi i am employee no. 8','8|8@iiitdmj.ac.in|r2421177@gmail.com|hello this is mail no. 8|Hi i am employee no. 8');
+Insert into emailqueue values (9,'9@iiitdmj.ac.in','r2421177@gmail.com','hello this is mail no. 9','Hi i am employee no. 9','9|9@iiitdmj.ac.in|r2421177@gmail.com|hello this is mail no. 9|Hi i am employee no. 9');
+Insert into emailqueue values (10,'10@iiitdmj.ac.in','r2421177@gmail.com','hello this is mail no. 10','Hi i am employee no. 10','10|10@iiitdmj.ac.in|r2421177@gmail.com|hello this is mail no. 10|Hi i am employee no. 10');
+Insert into emailqueue values (11,'11@iiitdmj.ac.in','r2421177@gmail.com','hello this is mail no. 11','Hi i am employee no. 11','11|11@iiitdmj.ac.in|r2421177@gmail.com|hello this is mail no. 11|Hi i am employee no. 11');
+Insert into emailqueue values (12,'12@iiitdmj.ac.in','r2421177@gmail.com','hello this is mail no. 12','Hi i am employee no. 12','12|12@iiitdmj.ac.in|r2421177@gmail.com|hello this is mail no. 12|Hi i am employee no. 12');
+Insert into emailqueue values (13,'13@iiitdmj.ac.in','r2421177@gmail.com','hello this is mail no. 13','Hi i am employee no. 13','13|13@iiitdmj.ac.in|r2421177@gmail.com|hello this is mail no. 13|Hi i am employee no. 13');
+Insert into emailqueue values (14,'14@iiitdmj.ac.in','r2421177@gmail.com','hello this is mail no. 14','Hi i am employee no. 14','14|14@iiitdmj.ac.in|r2421177@gmail.com|hello this is mail no. 14|Hi i am employee no. 14');
+Insert into emailqueue values (15,'15@iiitdmj.ac.in','r2421177@gmail.com','hello this is mail no. 15','Hi i am employee no. 15','15|15@iiitdmj.ac.in|r2421177@gmail.com|hello this is mail no. 15|Hi i am employee no. 15');
+Insert into emailqueue values (16,'16@iiitdmj.ac.in','r2421177@gmail.com','hello this is mail no. 16','Hi i am employee no. 16','16|16@iiitdmj.ac.in|r2421177@gmail.com|hello this is mail no. 16|Hi i am employee no. 16');
+Insert into emailqueue values (17,'17@iiitdmj.ac.in','r2421177@gmail.com','hello this is mail no. 17','Hi i am employee no. 17','17|17@iiitdmj.ac.in|r2421177@gmail.com|hello this is mail no. 17|Hi i am employee no. 17');
+Insert into emailqueue values (18,'18@iiitdmj.ac.in','r2421177@gmail.com','hello this is mail no. 18','Hi i am employee no. 18','18|18@iiitdmj.ac.in|r2421177@gmail.com|hello this is mail no. 18|Hi i am employee no. 18');
+Insert into emailqueue values (19,'19@iiitdmj.ac.in','r2421177@gmail.com','hello this is mail no. 19','Hi i am employee no. 19','19|19@iiitdmj.ac.in|r2421177@gmail.com|hello this is mail no. 19|Hi i am employee no. 19');
+Insert into emailqueue values (20,'20@iiitdmj.ac.in','r2421177@gmail.com','hello this is mail no. 20','Hi i am employee no. 20','20|20@iiitdmj.ac.in|r2421177@gmail.com|hello this is mail no. 20|Hi i am employee no. 20');
+Insert into emailqueue values (21,'21@iiitdmj.ac.in','r2421177@gmail.com','hello this is mail no. 21','Hi i am employee no. 21','21|21@iiitdmj.ac.in|r2421177@gmail.com|hello this is mail no. 21|Hi i am employee no. 21');
+Insert into emailqueue values (22,'22@iiitdmj.ac.in','r2421177@gmail.com','hello this is mail no. 22','Hi i am employee no. 22','22|22@iiitdmj.ac.in|r2421177@gmail.com|hello this is mail no. 22|Hi i am employee no. 22');
+Insert into emailqueue values (23,'23@iiitdmj.ac.in','r2421177@gmail.com','hello this is mail no. 23','Hi i am employee no. 23','23|23@iiitdmj.ac.in|r2421177@gmail.com|hello this is mail no. 23|Hi i am employee no. 23');
+Insert into emailqueue values (24,'24@iiitdmj.ac.in','r2421177@gmail.com','hello this is mail no. 24','Hi i am employee no. 24','24|24@iiitdmj.ac.in|r2421177@gmail.com|hello this is mail no. 24|Hi i am employee no. 24');
+Insert into emailqueue values (25,'25@iiitdmj.ac.in','r2421177@gmail.com','hello this is mail no. 25','Hi i am employee no. 25','25|25@iiitdmj.ac.in|r2421177@gmail.com|hello this is mail no. 25|Hi i am employee no. 25');
+Insert into emailqueue values (26,'26@iiitdmj.ac.in','r2421177@gmail.com','hello this is mail no. 26','Hi i am employee no. 26','26|26@iiitdmj.ac.in|r2421177@gmail.com|hello this is mail no. 26|Hi i am employee no. 26');
+Insert into emailqueue values (27,'27@iiitdmj.ac.in','r2421177@gmail.com','hello this is mail no. 27','Hi i am employee no. 27','27|27@iiitdmj.ac.in|r2421177@gmail.com|hello this is mail no. 27|Hi i am employee no. 27');
+Insert into emailqueue values (28,'28@iiitdmj.ac.in','r2421177@gmail.com','hello this is mail no. 28','Hi i am employee no. 28','28|28@iiitdmj.ac.in|r2421177@gmail.com|hello this is mail no. 28|Hi i am employee no. 28');
+Insert into emailqueue values (29,'29@iiitdmj.ac.in','r2421177@gmail.com','hello this is mail no. 29','Hi i am employee no. 29','29|29@iiitdmj.ac.in|r2421177@gmail.com|hello this is mail no. 29|Hi i am employee no. 29');
+Insert into emailqueue values (30,'30@iiitdmj.ac.in','r2421177@gmail.com','hello this is mail no. 30','Hi i am employee no. 30','30|30@iiitdmj.ac.in|r2421177@gmail.com|hello this is mail no. 30|Hi i am employee no. 30');
+Insert into emailqueue values (31,'31@iiitdmj.ac.in','r2421177@gmail.com','hello this is mail no. 31','Hi i am employee no. 31','31|31@iiitdmj.ac.in|r2421177@gmail.com|hello this is mail no. 31|Hi i am employee no. 31');
+Insert into emailqueue values (32,'32@iiitdmj.ac.in','r2421177@gmail.com','hello this is mail no. 32','Hi i am employee no. 32','32|32@iiitdmj.ac.in|r2421177@gmail.com|hello this is mail no. 32|Hi i am employee no. 32');
+Insert into emailqueue values (33,'33@iiitdmj.ac.in','r2421177@gmail.com','hello this is mail no. 33','Hi i am employee no. 33','33|33@iiitdmj.ac.in|r2421177@gmail.com|hello this is mail no. 33|Hi i am employee no. 33');
+Insert into emailqueue values (34,'34@iiitdmj.ac.in','r2421177@gmail.com','hello this is mail no. 34','Hi i am employee no. 34','34|34@iiitdmj.ac.in|r2421177@gmail.com|hello this is mail no. 34|Hi i am employee no. 34');
+Insert into emailqueue values (35,'35@iiitdmj.ac.in','r2421177@gmail.com','hello this is mail no. 35','Hi i am employee no. 35','35|35@iiitdmj.ac.in|r2421177@gmail.com|hello this is mail no. 35|Hi i am employee no. 35');
+Insert into emailqueue values (36,'36@iiitdmj.ac.in','r2421177@gmail.com','hello this is mail no. 36','Hi i am employee no. 36','36|36@iiitdmj.ac.in|r2421177@gmail.com|hello this is mail no. 36|Hi i am employee no. 36');
+Insert into emailqueue values (37,'37@iiitdmj.ac.in','r2421177@gmail.com','hello this is mail no. 37','Hi i am employee no. 37','37|37@iiitdmj.ac.in|r2421177@gmail.com|hello this is mail no. 37|Hi i am employee no. 37');
+Insert into emailqueue values (38,'38@iiitdmj.ac.in','r2421177@gmail.com','hello this is mail no. 38','Hi i am employee no. 38','38|38@iiitdmj.ac.in|r2421177@gmail.com|hello this is mail no. 38|Hi i am employee no. 38');
+Insert into emailqueue values (39,'39@iiitdmj.ac.in','r2421177@gmail.com','hello this is mail no. 39','Hi i am employee no. 39','39|39@iiitdmj.ac.in|r2421177@gmail.com|hello this is mail no. 39|Hi i am employee no. 39');
+Insert into emailqueue values (40,'40@iiitdmj.ac.in','r2421177@gmail.com','hello this is mail no. 40','Hi i am employee no. 40','40|40@iiitdmj.ac.in|r2421177@gmail.com|hello this is mail no. 40|Hi i am employee no. 40');
+Insert into emailqueue values (41,'41@iiitdmj.ac.in','r2421177@gmail.com','hello this is mail no. 41','Hi i am employee no. 41','41|41@iiitdmj.ac.in|r2421177@gmail.com|hello this is mail no. 41|Hi i am employee no. 41');
+Insert into emailqueue values (42,'42@iiitdmj.ac.in','r2421177@gmail.com','hello this is mail no. 42','Hi i am employee no. 42','42|42@iiitdmj.ac.in|r2421177@gmail.com|hello this is mail no. 42|Hi i am employee no. 42');
+Insert into emailqueue values (43,'43@iiitdmj.ac.in','r2421177@gmail.com','hello this is mail no. 43','Hi i am employee no. 43','43|43@iiitdmj.ac.in|r2421177@gmail.com|hello this is mail no. 43|Hi i am employee no. 43');
+Insert into emailqueue values (44,'44@iiitdmj.ac.in','r2421177@gmail.com','hello this is mail no. 44','Hi i am employee no. 44','44|44@iiitdmj.ac.in|r2421177@gmail.com|hello this is mail no. 44|Hi i am employee no. 44');
+Insert into emailqueue values (45,'45@iiitdmj.ac.in','r2421177@gmail.com','hello this is mail no. 45','Hi i am employee no. 45','45|45@iiitdmj.ac.in|r2421177@gmail.com|hello this is mail no. 45|Hi i am employee no. 45');
+Insert into emailqueue values (46,'46@iiitdmj.ac.in','r2421177@gmail.com','hello this is mail no. 46','Hi i am employee no. 46','46|46@iiitdmj.ac.in|r2421177@gmail.com|hello this is mail no. 46|Hi i am employee no. 46');
+Insert into emailqueue values (47,'47@iiitdmj.ac.in','r2421177@gmail.com','hello this is mail no. 47','Hi i am employee no. 47','47|47@iiitdmj.ac.in|r2421177@gmail.com|hello this is mail no. 47|Hi i am employee no. 47');
+Insert into emailqueue values (48,'48@iiitdmj.ac.in','r2421177@gmail.com','hello this is mail no. 48','Hi i am employee no. 48','48|48@iiitdmj.ac.in|r2421177@gmail.com|hello this is mail no. 48|Hi i am employee no. 48');
+Insert into emailqueue values (49,'49@iiitdmj.ac.in','r2421177@gmail.com','hello this is mail no. 49','Hi i am employee no. 49','49|49@iiitdmj.ac.in|r2421177@gmail.com|hello this is mail no. 49|Hi i am employee no. 49');
+Insert into emailqueue values (50,'50@iiitdmj.ac.in','r2421177@gmail.com','hello this is mail no. 50','Hi i am employee no. 50','50|50@iiitdmj.ac.in|r2421177@gmail.com|hello this is mail no. 50|Hi i am employee no. 50');
+Insert into emailqueue values (51,'51@iiitdmj.ac.in','r2421177@gmail.com','hello this is mail no. 51','Hi i am employee no. 51','51|51@iiitdmj.ac.in|r2421177@gmail.com|hello this is mail no. 51|Hi i am employee no. 51');
+Insert into emailqueue values (52,'52@iiitdmj.ac.in','r2421177@gmail.com','hello this is mail no. 52','Hi i am employee no. 52','52|52@iiitdmj.ac.in|r2421177@gmail.com|hello this is mail no. 52|Hi i am employee no. 52');
+Insert into emailqueue values (53,'53@iiitdmj.ac.in','r2421177@gmail.com','hello this is mail no. 53','Hi i am employee no. 53','53|53@iiitdmj.ac.in|r2421177@gmail.com|hello this is mail no. 53|Hi i am employee no. 53');
+Insert into emailqueue values (54,'54@iiitdmj.ac.in','r2421177@gmail.com','hello this is mail no. 54','Hi i am employee no. 54','54|54@iiitdmj.ac.in|r2421177@gmail.com|hello this is mail no. 54|Hi i am employee no. 54');
+Insert into emailqueue values (55,'55@iiitdmj.ac.in','r2421177@gmail.com','hello this is mail no. 55','Hi i am employee no. 55','55|55@iiitdmj.ac.in|r2421177@gmail.com|hello this is mail no. 55|Hi i am employee no. 55');
+Insert into emailqueue values (56,'56@iiitdmj.ac.in','r2421177@gmail.com','hello this is mail no. 56','Hi i am employee no. 56','56|56@iiitdmj.ac.in|r2421177@gmail.com|hello this is mail no. 56|Hi i am employee no. 56');
+Insert into emailqueue values (57,'57@iiitdmj.ac.in','r2421177@gmail.com','hello this is mail no. 57','Hi i am employee no. 57','57|57@iiitdmj.ac.in|r2421177@gmail.com|hello this is mail no. 57|Hi i am employee no. 57');
+Insert into emailqueue values (58,'58@iiitdmj.ac.in','r2421177@gmail.com','hello this is mail no. 58','Hi i am employee no. 58','58|58@iiitdmj.ac.in|r2421177@gmail.com|hello this is mail no. 58|Hi i am employee no. 58');
+Insert into emailqueue values (59,'59@iiitdmj.ac.in','r2421177@gmail.com','hello this is mail no. 59','Hi i am employee no. 59','59|59@iiitdmj.ac.in|r2421177@gmail.com|hello this is mail no. 59|Hi i am employee no. 59');
+Insert into emailqueue values (60,'60@iiitdmj.ac.in','r2421177@gmail.com','hello this is mail no. 60','Hi i am employee no. 60','60|60@iiitdmj.ac.in|r2421177@gmail.com|hello this is mail no. 60|Hi i am employee no. 60');
+Insert into emailqueue values (61,'61@iiitdmj.ac.in','r2421177@gmail.com','hello this is mail no. 61','Hi i am employee no. 61','61|61@iiitdmj.ac.in|r2421177@gmail.com|hello this is mail no. 61|Hi i am employee no. 61');
+Insert into emailqueue values (62,'62@iiitdmj.ac.in','r2421177@gmail.com','hello this is mail no. 62','Hi i am employee no. 62','62|62@iiitdmj.ac.in|r2421177@gmail.com|hello this is mail no. 62|Hi i am employee no. 62');
+Insert into emailqueue values (63,'63@iiitdmj.ac.in','r2421177@gmail.com','hello this is mail no. 63','Hi i am employee no. 63','63|63@iiitdmj.ac.in|r2421177@gmail.com|hello this is mail no. 63|Hi i am employee no. 63');
+Insert into emailqueue values (64,'64@iiitdmj.ac.in','r2421177@gmail.com','hello this is mail no. 64','Hi i am employee no. 64','64|64@iiitdmj.ac.in|r2421177@gmail.com|hello this is mail no. 64|Hi i am employee no. 64');
+Insert into emailqueue values (65,'65@iiitdmj.ac.in','r2421177@gmail.com','hello this is mail no. 65','Hi i am employee no. 65','65|65@iiitdmj.ac.in|r2421177@gmail.com|hello this is mail no. 65|Hi i am employee no. 65');
+Insert into emailqueue values (66,'66@iiitdmj.ac.in','r2421177@gmail.com','hello this is mail no. 66','Hi i am employee no. 66','66|66@iiitdmj.ac.in|r2421177@gmail.com|hello this is mail no. 66|Hi i am employee no. 66');
+Insert into emailqueue values (67,'67@iiitdmj.ac.in','r2421177@gmail.com','hello this is mail no. 67','Hi i am employee no. 67','67|67@iiitdmj.ac.in|r2421177@gmail.com|hello this is mail no. 67|Hi i am employee no. 67');
+Insert into emailqueue values (68,'68@iiitdmj.ac.in','r2421177@gmail.com','hello this is mail no. 68','Hi i am employee no. 68','68|68@iiitdmj.ac.in|r2421177@gmail.com|hello this is mail no. 68|Hi i am employee no. 68');
+Insert into emailqueue values (69,'69@iiitdmj.ac.in','r2421177@gmail.com','hello this is mail no. 69','Hi i am employee no. 69','69|69@iiitdmj.ac.in|r2421177@gmail.com|hello this is mail no. 69|Hi i am employee no. 69');
+Insert into emailqueue values (70,'70@iiitdmj.ac.in','r2421177@gmail.com','hello this is mail no. 70','Hi i am employee no. 70','70|70@iiitdmj.ac.in|r2421177@gmail.com|hello this is mail no. 70|Hi i am employee no. 70');
+Insert into emailqueue values (71,'71@iiitdmj.ac.in','r2421177@gmail.com','hello this is mail no. 71','Hi i am employee no. 71','71|71@iiitdmj.ac.in|r2421177@gmail.com|hello this is mail no. 71|Hi i am employee no. 71');
+Insert into emailqueue values (72,'72@iiitdmj.ac.in','r2421177@gmail.com','hello this is mail no. 72','Hi i am employee no. 72','72|72@iiitdmj.ac.in|r2421177@gmail.com|hello this is mail no. 72|Hi i am employee no. 72');
+Insert into emailqueue values (73,'73@iiitdmj.ac.in','r2421177@gmail.com','hello this is mail no. 73','Hi i am employee no. 73','73|73@iiitdmj.ac.in|r2421177@gmail.com|hello this is mail no. 73|Hi i am employee no. 73');
+Insert into emailqueue values (74,'74@iiitdmj.ac.in','r2421177@gmail.com','hello this is mail no. 74','Hi i am employee no. 74','74|74@iiitdmj.ac.in|r2421177@gmail.com|hello this is mail no. 74|Hi i am employee no. 74');
+Insert into emailqueue values (75,'75@iiitdmj.ac.in','r2421177@gmail.com','hello this is mail no. 75','Hi i am employee no. 75','75|75@iiitdmj.ac.in|r2421177@gmail.com|hello this is mail no. 75|Hi i am employee no. 75');
+Insert into emailqueue values (76,'76@iiitdmj.ac.in','r2421177@gmail.com','hello this is mail no. 76','Hi i am employee no. 76','76|76@iiitdmj.ac.in|r2421177@gmail.com|hello this is mail no. 76|Hi i am employee no. 76');
+Insert into emailqueue values (77,'77@iiitdmj.ac.in','r2421177@gmail.com','hello this is mail no. 77','Hi i am employee no. 77','77|77@iiitdmj.ac.in|r2421177@gmail.com|hello this is mail no. 77|Hi i am employee no. 77');
+Insert into emailqueue values (78,'78@iiitdmj.ac.in','r2421177@gmail.com','hello this is mail no. 78','Hi i am employee no. 78','78|78@iiitdmj.ac.in|r2421177@gmail.com|hello this is mail no. 78|Hi i am employee no. 78');
+Insert into emailqueue values (79,'79@iiitdmj.ac.in','r2421177@gmail.com','hello this is mail no. 79','Hi i am employee no. 79','79|79@iiitdmj.ac.in|r2421177@gmail.com|hello this is mail no. 79|Hi i am employee no. 79');
+Insert into emailqueue values (80,'80@iiitdmj.ac.in','r2421177@gmail.com','hello this is mail no. 80','Hi i am employee no. 80','80|80@iiitdmj.ac.in|r2421177@gmail.com|hello this is mail no. 80|Hi i am employee no. 80');
+Insert into emailqueue values (81,'81@iiitdmj.ac.in','r2421177@gmail.com','hello this is mail no. 81','Hi i am employee no. 81','81|81@iiitdmj.ac.in|r2421177@gmail.com|hello this is mail no. 81|Hi i am employee no. 81');
+Insert into emailqueue values (82,'82@iiitdmj.ac.in','r2421177@gmail.com','hello this is mail no. 82','Hi i am employee no. 82','82|82@iiitdmj.ac.in|r2421177@gmail.com|hello this is mail no. 82|Hi i am employee no. 82');
+Insert into emailqueue values (83,'83@iiitdmj.ac.in','r2421177@gmail.com','hello this is mail no. 83','Hi i am employee no. 83','83|83@iiitdmj.ac.in|r2421177@gmail.com|hello this is mail no. 83|Hi i am employee no. 83');
+Insert into emailqueue values (84,'84@iiitdmj.ac.in','r2421177@gmail.com','hello this is mail no. 84','Hi i am employee no. 84','84|84@iiitdmj.ac.in|r2421177@gmail.com|hello this is mail no. 84|Hi i am employee no. 84');
+Insert into emailqueue values (85,'85@iiitdmj.ac.in','r2421177@gmail.com','hello this is mail no. 85','Hi i am employee no. 85','85|85@iiitdmj.ac.in|r2421177@gmail.com|hello this is mail no. 85|Hi i am employee no. 85');
+Insert into emailqueue values (86,'86@iiitdmj.ac.in','r2421177@gmail.com','hello this is mail no. 86','Hi i am employee no. 86','86|86@iiitdmj.ac.in|r2421177@gmail.com|hello this is mail no. 86|Hi i am employee no. 86');
+Insert into emailqueue values (87,'87@iiitdmj.ac.in','r2421177@gmail.com','hello this is mail no. 87','Hi i am employee no. 87','87|87@iiitdmj.ac.in|r2421177@gmail.com|hello this is mail no. 87|Hi i am employee no. 87');
+Insert into emailqueue values (88,'88@iiitdmj.ac.in','r2421177@gmail.com','hello this is mail no. 88','Hi i am employee no. 88','88|88@iiitdmj.ac.in|r2421177@gmail.com|hello this is mail no. 88|Hi i am employee no. 88');
+Insert into emailqueue values (89,'89@iiitdmj.ac.in','r2421177@gmail.com','hello this is mail no. 89','Hi i am employee no. 89','89|89@iiitdmj.ac.in|r2421177@gmail.com|hello this is mail no. 89|Hi i am employee no. 89');
+Insert into emailqueue values (90,'90@iiitdmj.ac.in','r2421177@gmail.com','hello this is mail no. 90','Hi i am employee no. 90','90|90@iiitdmj.ac.in|r2421177@gmail.com|hello this is mail no. 90|Hi i am employee no. 90');
+Insert into emailqueue values (91,'91@iiitdmj.ac.in','r2421177@gmail.com','hello this is mail no. 91','Hi i am employee no. 91','91|91@iiitdmj.ac.in|r2421177@gmail.com|hello this is mail no. 91|Hi i am employee no. 91');
+Insert into emailqueue values (92,'92@iiitdmj.ac.in','r2421177@gmail.com','hello this is mail no. 92','Hi i am employee no. 92','92|92@iiitdmj.ac.in|r2421177@gmail.com|hello this is mail no. 92|Hi i am employee no. 92');
+Insert into emailqueue values (93,'93@iiitdmj.ac.in','r2421177@gmail.com','hello this is mail no. 93','Hi i am employee no. 93','93|93@iiitdmj.ac.in|r2421177@gmail.com|hello this is mail no. 93|Hi i am employee no. 93');
+Insert into emailqueue values (94,'94@iiitdmj.ac.in','r2421177@gmail.com','hello this is mail no. 94','Hi i am employee no. 94','94|94@iiitdmj.ac.in|r2421177@gmail.com|hello this is mail no. 94|Hi i am employee no. 94');
+Insert into emailqueue values (95,'95@iiitdmj.ac.in','r2421177@gmail.com','hello this is mail no. 95','Hi i am employee no. 95','95|95@iiitdmj.ac.in|r2421177@gmail.com|hello this is mail no. 95|Hi i am employee no. 95');
+Insert into emailqueue values (96,'96@iiitdmj.ac.in','r2421177@gmail.com','hello this is mail no. 96','Hi i am employee no. 96','96|96@iiitdmj.ac.in|r2421177@gmail.com|hello this is mail no. 96|Hi i am employee no. 96');
+Insert into emailqueue values (97,'97@iiitdmj.ac.in','r2421177@gmail.com','hello this is mail no. 97','Hi i am employee no. 97','97|97@iiitdmj.ac.in|r2421177@gmail.com|hello this is mail no. 97|Hi i am employee no. 97');
+Insert into emailqueue values (98,'98@iiitdmj.ac.in','r2421177@gmail.com','hello this is mail no. 98','Hi i am employee no. 98','98|98@iiitdmj.ac.in|r2421177@gmail.com|hello this is mail no. 98|Hi i am employee no. 98');
+Insert into emailqueue values (99,'99@iiitdmj.ac.in','r2421177@gmail.com','hello this is mail no. 99','Hi i am employee no. 99','99|99@iiitdmj.ac.in|r2421177@gmail.com|hello this is mail no. 99|Hi i am employee no. 99');
+Insert into emailqueue values (100,'100@iiitdmj.ac.in','r2421177@gmail.com','hello this is mail no. 100','Hi i am employee no. 100','100|100@iiitdmj.ac.in|r2421177@gmail.com|hello this is mail no. 100|Hi i am employee no. 100');

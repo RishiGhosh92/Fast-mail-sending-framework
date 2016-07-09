@@ -1,0 +1,35 @@
+Hi,
+For Achieving high Email-sending rate,I have taken following steps:
+
+1.) Avoided " Select * " statements as fetching all the columns is much expensive than fetching a single column.
+	For this,I added a column named "data_email" which was a concatenation of all fields of db using "|" as delimiter.
+	Ex.->id=1  from="1@gmail.com"  to="to@gmail.com"  subject="Mail sub"  body="Mail body"  then data_email="1|1@gmail|to@gmail|Mail sub|Mail body"
+	For 10^5 rows DB fetching speed using "Select data_email" column=1.6 secs and using "Select *" =2.1 secs.
+	
+2.) I avoided indexing of table as we have to traverse whole email anyway and for 10^5 rows Data fetching speed using index=1.6 secs and
+	without index=1.2 secs
+	
+4.) Instead of Serially Fetching records from DB and then Serially sending mails one after another,I used Executor Service in java that allowed me
+	to execute both type of Jobs(DBread and EmailSend) concurrently using a thread pool.
+	for 10^6 rows,Serial DB fetching=11 secs and Concurrent DB fetching(using Executor Service)=4 secs 
+	
+3.) I Created a Thread pool of "Activity" Objects and defined a page as "10^4" rows.Fetching a page was done on on-demand basis.
+    Both "Sendmail" and "DBread" class inherit "Activity" Class which allowed me to parallely process Data fetching and Mail Sending task.
+	for i-th thread pool,reading DB page(i+1) and Sending mails to object being created at i-th execution is done in parallel which speeds up
+	the whole process.
+	
+4.) Re-used resources as much as possible like Using same Connection object for Each DBread and using same session for sending every mail over smtp
+	mail server.This reusing of object saved a lot of time spent in Eshtablishing connection to db or creating a session for each thread of 
+	execution.
+	
+5.) For Mail Sending,sendMessage method is used instead of Transport.send which speeds up Email-sending process.
+
+6.) Used TestCode assuming each mail-sending a 3-second process,I observed that 1700 threads in Thread pool proved to be most efficient.Lowering 
+	number of threads will definitely increase execution time whereas too many threads will create a lot of overhead and may cause the program to
+	hang(incase of 2400 threads).
+	
+7.) Used TestCode to detemine most efficient size of a DB fetch page size,i.e.,10^4 rows.I haven't performed update operation on database to set
+	status as sent or not.Thread pool takes care that no thread gets repeated once i submit each email thread to it Sequentially.This ensures that no 
+	email is sent twice.
+	
+	

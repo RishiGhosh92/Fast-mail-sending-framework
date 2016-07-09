@@ -1,0 +1,4 @@
+While using Eclipse IDE,
+1.)Open Package of this program using "Package Explorer"(If Package Explorer not appearing:Window->Show View->Package Explorer)
+2.)Now in this package,Right Click "Referenced Libraries"->Build Path->Configure Build Path->In "Java Build Path"->Libraries,Click "Add External JARs"
+   and select both these JARs in file explorer.
